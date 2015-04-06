@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-S'B:\\Documents\\GitHub\\CMPM148\\Twine Story\\I Was the Only Witness.tws'
+S'C:\\Users\\chats_000\\Documents\\GitHub\\CMPM148\\Twine Story\\I Was the Only Witness.tws'
 p4
 sS'metadata'
 p5
@@ -27,7 +27,7 @@ I00
 sS'pos'
 p15
 (lp16
-F10.0
+F8.510306521504669
 aF13.86478304742684
 asS'passage'
 p17
@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-V<<silently>>\u000a<<set $realization_repeat = "no">>\u000a<<set $mental_repeat = "no">>\u000a<<endsilently>>[[That must have been the fastest you've ever shut your eyes. As you slowly recompose yoruself and gaze upon your situation, the realization of your partner's death hits you like a truck.|Realization]]
+V<<silently>>\u000a<<set $realization_repeat = "no">>\u000a<<set $mental_repeat = "no">>\u000a<<set $kitchen_repeat = "no">>\u000a<<set $bed_repeat = "no">>\u000a<<endsilently>>[[That must have been the fastest you've ever shut your eyes. As you slowly recompose yourself and gaze upon your situation, the realization of your partner's death hits you like a truck.|Realization]]
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2015
 I4
-I5
-I10
-I25
-I55
 I6
-I95
+I9
+I51
+I5
+I0
+I96
 I1
 tp27
 (dp28
@@ -185,29 +185,29 @@ g14
 I00
 sg15
 (lp69
-F2214.723079140838
-aF115.35678247080864
+F305.5202537119792
+aF147.1428571428571
 asg17
 (itiddlywiki
 Tiddler
 p70
 (dp71
 g21
-VThat must have been what happened.
+V<<if $realization_repeat eq "yes">>You try to concentrate despite the pain building inside your mind.\u000a\u000a<<endif>>Alex lay motionless on the bed, eyes and mouth half open. All signs of life Alex used to share with you has left this Earth. A sharp pain shocks your mind awake but leaving you at a loss for what happened. Your mind ""locks up"" trying to remember what happened during the day. First you try to remember what happened after you woke up:\u000a\u000a[[You got out of bed and went downstairs to make some breakfast for Alex and yourself. It was simple bacon and eggs.|Made Breakfast]]\u000a\u000a[[You battled with your alarm for five minutes before rolling out of bed to take a shower.|Shower]]\u000a\u000a[[You looked outside your window and saw your neighbors leaving for work. The day looked really great from inside you house. You decide to go out for a run before coming back to shower.|Run]]
 p72
 sg23
-VGood Memory
+VRealization
 p73
 sg25
 g26
 ((I2015
 I4
-I3
-I21
-I39
-I39
-I4
-I93
+I6
+I9
+I51
+I52
+I0
+I96
 I1
 tp74
 (dp75
@@ -222,7 +222,7 @@ I4
 I3
 I1
 I2
-I48
+I49
 I4
 I93
 I1
@@ -235,29 +235,29 @@ g14
 I00
 sg15
 (lp84
-F305.5202537119792
-aF147.1428571428571
+F735.294651866802
+aF145.99394550958618
 asg17
 (itiddlywiki
 Tiddler
 p85
 (dp86
 g21
-V<<if $realization_repeat eq "yes">>You try to concentrate despite the pain building inside your mind.\u000a\u000a<<endif>>Alex lay motionless on the bed, eyes and mouth half open. All signs of life Alex used to share with you has left this Earth. A sharp pain shocks your mind awake but leaving you at a loss for what happened. Your mind ""locks up"" trying to remember what happenend during the day. First you try to remember what happened after you woke up:\u000a\u000a[[You got out of bed and went downstairs to make some breakfast for Alex and yourself. It was simple bacon and eggs.|Made Breakfast]]\u000a\u000a[[You battled with your alarm for five minutes before rolling out of bed to take a shower.|Shower]]\u000a\u000a[[You looked outside your window and saw your neighbors leaving for work. The day looked really great from inside you house. You decide to go out for a run before coming back to shower.|Run]]
+V<<if $mental_repeat eq "yes">>You try to concentrate despite the pain building inside your mind.\u000a\u000a<<endif>>Despite the mental strain, you do remember taking a shower once you got out of bed. The hot water didn't seem to work, so you got out of the shower quickly to not get too cold.\u000a\u000aAfter your shower, you stepped back into the bedroom. Alex is still asleep on your bed. Thinking of Alex causes another surge of pain through your skull. You are having trouble remembering what happened next:\u000a\u000a[[You believe you stared at Alex for a few moments, wondering why it was so hard to keep conversation last night. Usually Alex is one of the talkative one in the relationship. But eventually you banish the thought and go down stairs to make breakfast.|Kitchen]]\u000a\u000a[[You remember hearing the phone ring. You were expecting a call from work in the morning. Although, you didn't think your boss would call this early.|Early Call]]\u000a\u000a[[With nothing to do at the moment you went to check your email. You remember reading that your credit card application was denied.|Application]]
 p87
 sg23
-VRealization
+VShower
 p88
 sg25
 g26
 ((I2015
 I4
-I5
-I10
-I31
-I17
 I6
-I95
+I9
+I53
+I57
+I0
+I96
 I1
 tp89
 (dp90
@@ -269,12 +269,12 @@ sg33
 g26
 ((I2015
 I4
-I3
-I1
-I2
-I49
-I4
-I93
+I5
+I10
+I15
+I43
+I6
+I95
 I1
 tp94
 (dp95
@@ -285,29 +285,29 @@ g14
 I00
 sg15
 (lp99
-F2213.658497909758
-aF250.62418913074805
+F401.858728557013
+aF424.2583249243187
 asg17
 (itiddlywiki
 Tiddler
 p100
 (dp101
 g21
-VI think that's what happened.
+V<<set $realization_repeat = "yes">>[[No, you don't think that was right. You can never motivate yourself to run in the morning.|Realization]]
 p102
 sg23
-VOK Memory
+VRun
 p103
 sg25
 g26
 ((I2015
 I4
-I3
-I21
-I40
-I50
-I4
-I93
+I5
+I10
+I28
+I53
+I6
+I95
 I1
 tp104
 (dp105
@@ -319,12 +319,12 @@ sg33
 g26
 ((I2015
 I4
-I3
-I1
-I2
-I50
-I4
-I93
+I5
+I10
+I15
+I43
+I6
+I95
 I1
 tp109
 (dp110
@@ -335,29 +335,29 @@ g14
 I00
 sg15
 (lp114
-F2209.947239440681
-aF420.67464321752936
+F226.0110998990918
+aF424.06155398587276
 asg17
 (itiddlywiki
 Tiddler
 p115
 (dp116
 g21
-VThat couldn't have been what happened.
+V<<set $realization_repeat = "yes">>[[No you don't think that was right. You don't remember being that hungry.|Realization]]
 p117
 sg23
-VBad Memory
+VMade Breakfast
 p118
 sg25
 g26
 ((I2015
 I4
-I3
-I21
-I40
-I13
-I4
-I93
+I5
+I10
+I28
+I44
+I6
+I95
 I1
 tp119
 (dp120
@@ -369,12 +369,12 @@ sg33
 g26
 ((I2015
 I4
-I3
-I1
-I2
-I53
-I4
-I93
+I5
+I10
+I15
+I43
+I6
+I95
 I1
 tp124
 (dp125
@@ -385,29 +385,29 @@ g14
 I00
 sg15
 (lp129
-F735.294651866802
-aF145.99394550958618
+F646.4046417759828
+aF437.7850655903126
 asg17
 (itiddlywiki
 Tiddler
 p130
 (dp131
 g21
-V<<if $mental_repeat eq "yes">>Some thingowefajsdlfjkasdflkajsdf\u000a<<endif>>Despite the mental strain, you do remember taking a shower once you got out of bed. The hot water didn't seem to work, so you got out of the shower quickly to not get too cold.\u000a\u000aAfter your shower, you stepped back into the bedroom. Alex is still asleep on your bed. Thinking of Alex causes another surge of pain through your skull. You are having trouble remembering what happened next:\u000a\u000a[[You believe you staired at Alex for a few moments, wondering why it was so hard to keep conversation last night. Usually Alex is one of the talkitive one in the relationship. But eventually you banish the thought and go down stairs to make breakfast.|Kitchen]]\u000a\u000a[[You remember hearing the phone ring. You were expecting a call from work in the morning. Although, you didn't think your boss would call this early.|Early Call]]\u000a\u000a[[With nothing to do at the moment you went to check your email. You remember reading that your credit card application was denied.|Application]]\u000a\u000a
+V<<set $mental_repeat = "yes">>[[No you don't think that was right. Your fairly sure you did something to Alex after that.|Shower]]
 p132
 sg23
-VShower
+VApplication
 p133
 sg25
 g26
 ((I2015
 I4
-I5
-I22
-I55
-I41
 I6
-I95
+I8
+I26
+I4
+I0
+I96
 I1
 tp134
 (dp135
@@ -420,9 +420,9 @@ g26
 ((I2015
 I4
 I5
-I10
-I15
-I43
+I22
+I55
+I46
 I6
 I95
 I1
@@ -435,29 +435,29 @@ g14
 I00
 sg15
 (lp144
-F401.858728557013
-aF424.2583249243187
+F852.1059535822399
+aF439.71745711402605
 asg17
 (itiddlywiki
 Tiddler
 p145
 (dp146
 g21
-V<<set $realization_repeat = "yes">>[[No, you don't think that was right. You can never motivate yourself to run in the morning.|Realization]]
+V<<set $mental_repeat = "yes">>[[No you don't think that was right. You find it hard to remember when your boss actually called. But your fairly sure you did something to Alex after that.|Shower]]
 p147
 sg23
-VRun
+VEarly Call
 p148
 sg25
 g26
 ((I2015
 I4
-I5
-I10
-I28
-I53
 I6
-I95
+I8
+I26
+I36
+I0
+I96
 I1
 tp149
 (dp150
@@ -470,9 +470,9 @@ g26
 ((I2015
 I4
 I5
-I10
-I15
-I43
+I22
+I55
+I46
 I6
 I95
 I1
@@ -485,29 +485,29 @@ g14
 I00
 sg15
 (lp159
-F226.0110998990918
-aF424.06155398587276
+F1165.153380423817
+aF149.6619576185671
 asg17
 (itiddlywiki
 Tiddler
 p160
 (dp161
 g21
-V<<set $realization_repeat = "yes">>[[No you don't think that was right. You don't remember being that hungry.|Realization]]
+V<<if $kitchen_repeat eq "yes">>You try to concentrate despite the pain building inside your mind.\u000a\u000a<<endif>>You think once you got to the kitchen you began to make breakfast. Due to the awkwardness last night, you planned on making something that Alex would really enjoy. But for some reason you can't remember if you actually finished cooking or not.\u000a\u000aSuddenly, flashes of violence appear in your head. You imagine yourself hurting someone but can't tell who. But that couldn't be right, you haven\u2019t had a violent episode for years and the doctor said your therapy was complete. You still can't help but think that something bad happened, something bad to someone you care about.\u000a\u000aBut it is still a struggle to remember what happened after breakfast:\u000a\u000a[[While making breakfast you remember noticing a voice mail. Perhaps you did hear the phone earlier but were too distracted at the time.|Voice Mail]]\u000a\u000a[[You believe you finished making breakfast for Alex and yourself. You thought it would be a nice gesture.|Finish Breakfast]]\u000a\u000a[[You think your boss called while trying to make breakfast to discuss something about layoffs.|Boss Calls]]
 p162
 sg23
-VMade Breakfast
+VKitchen
 p163
 sg25
 g26
 ((I2015
 I4
-I5
-I10
-I28
-I44
 I6
-I95
+I9
+I54
+I48
+I0
+I96
 I1
 tp164
 (dp165
@@ -520,9 +520,9 @@ g26
 ((I2015
 I4
 I5
-I10
-I15
-I43
+I22
+I55
+I46
 I6
 I95
 I1
@@ -535,29 +535,29 @@ g14
 I00
 sg15
 (lp174
-F646.4046417759828
-aF437.7850655903126
+F1073.4631685166494
+aF439.71745711402605
 asg17
 (itiddlywiki
 Tiddler
 p175
 (dp176
 g21
-V<<set $mental_repeat = "yes">>[[|Shower]]
+V[[No you don't think that was right. You've never had to go into work for three weeks. Why would your boss call you if you haven't been there for so long. You're sure your doing fine at work. But for some reason, you mind keeps freezing when you think of the phone.|Kitchen]]
 p177
 sg23
-VApplication
+VBoss Calls
 p178
 sg25
 g26
 ((I2015
 I4
-I5
-I22
-I56
-I57
 I6
-I95
+I8
+I45
+I20
+I0
+I96
 I1
 tp179
 (dp180
@@ -569,12 +569,12 @@ sg33
 g26
 ((I2015
 I4
-I5
-I22
-I55
-I46
 I6
-I95
+I8
+I41
+I2
+I0
+I96
 I1
 tp184
 (dp185
@@ -585,29 +585,29 @@ g14
 I01
 sg15
 (lp189
-F852.1059535822399
-aF439.71745711402605
+F1548.448598883362
+aF152.6344161878576
 asg17
 (itiddlywiki
 Tiddler
 p190
 (dp191
 g21
-V<<set $mental_repeat = "yes">>[[|Shower]]
+V<<if $bed_repeat eq "yes">>You try to concentrate despite the pain building inside your mind.\u000a\u000a<<endif>>That must have bee right. You wanted to make Alex happy so you made breakfast in bed. After cooking you believe that you went back upstairs to present your creation to Alex. But again your mind goes blank except for the pain that washes over your brain. Why does thinking about Alex hurt so much? You can't seem to remember what Alex did to you.\u000a\u000aYou remember looking at all the food and silverware you brought up to your room. For some reason you remember staring a painfully long time at a knife you brought up. But you have a hard time thinking about what happened next:\u000a\u000a[[You think that the morning was the last time you spoke to Alex. You think that the morning was the last time anyone spoke to Alex.|Finish]]\u000a\u000a[[You think that you didn't want to disturb Alex sleeping. You think you just sat there trying to forget all the stress of the week.|Back To Bed]]
 p192
 sg23
-VEarly Call
+VFinish Breakfast
 p193
 sg25
 g26
 ((I2015
 I4
-I5
-I22
-I57
-I7
 I6
-I95
+I9
+I56
+I36
+I0
+I96
 I1
 tp194
 (dp195
@@ -619,12 +619,12 @@ sg33
 g26
 ((I2015
 I4
-I5
-I22
-I55
-I46
 I6
-I95
+I8
+I41
+I2
+I0
+I96
 I1
 tp199
 (dp200
@@ -635,29 +635,29 @@ g14
 I00
 sg15
 (lp204
-F1138.0998990918288
-aF161.25630676084762
+F1284.9616548940467
+aF433.72351160443986
 asg17
 (itiddlywiki
 Tiddler
 p205
 (dp206
 g21
-V
+V[[No you don't think that was right. Your mind really starts to hurt while thinking of the voice mail. You wonder if someone even did call that morning. The phone call may not have even been for you, it might have been for Alex.\u000a\u000aThinking of Alex causes an upsurge of anger inside of you. More flashes of violence flood your mind. It begins to hurt even more to think about Alex.|Kitchen]]
 p207
 sg23
-VKitchen
+VVoice Mail
 p208
 sg25
 g26
 ((I2015
 I4
-I5
-I22
-I55
-I46
 I6
-I95
+I9
+I55
+I44
+I0
+I96
 I1
 tp209
 (dp210
@@ -666,11 +666,124 @@ Rp212
 sg31
 (lp213
 sg33
-g212
+g26
+((I2015
+I4
+I6
+I8
+I41
+I2
+I0
+I96
+I1
+tp214
+(dp215
+tp216
+Rp217
+sbsa(dp218
+g14
+I00
+sg15
+(lp219
+F1547.8618872931056
+aF451.31180625630657
+asg17
+(itiddlywiki
+Tiddler
+p220
+(dp221
+g21
+V[[You imagine yourself ending all the pain Alex caused. You picture yourself ending all the conflict between Alex and yourself. But thinking of a life without Alex hurts. You feel as if a thousand voices are screaming in your head. You don't think this is right. Alex is fine. Alex is just asleep. The phone call was for Alex. You didn't mean to do anything.|Finish Breakfast]]
+p222
+sg23
+VFinish
+p223
+sg25
+g26
+((I2015
+I4
+I6
+I9
+I46
+I1
+I0
+I96
+I1
+tp224
+(dp225
+tp226
+Rp227
+sg31
+(lp228
+sg33
+g26
+((I2015
+I4
+I6
+I9
+I2
+I28
+I0
+I96
+I1
+tp229
+(dp230
+tp231
+Rp232
+sbsa(dp233
+g14
+I00
+sg15
+(lp234
+F1849.3747785708265
+aF147.72263770715352
+asg17
+(itiddlywiki
+Tiddler
+p235
+(dp236
+g21
+VThat must have been it. You were just stressed. That must have been why your mind was hurting so much. But you can't help but feel a little heart ache as you gaze at Alex. You hope that he wakes up soon so that you may enjoy breakfast together.\u000a\u000aYou hear sirens in the distance.\u000a\u000aThe End.
+p237
+sg23
+VBack To Bed
+p238
+sg25
+g26
+((I2015
+I4
+I6
+I9
+I50
+I9
+I0
+I96
+I1
+tp239
+(dp240
+tp241
+Rp242
+sg31
+(lp243
+sg33
+g26
+((I2015
+I4
+I6
+I9
+I2
+I28
+I0
+I96
+I1
+tp244
+(dp245
+tp246
+Rp247
 sbsasS'scale'
-p214
-F0.5174934725848566
+p248
+F0.6712790345367242
 sS'snapping'
-p215
+p249
 I00
 ss.
