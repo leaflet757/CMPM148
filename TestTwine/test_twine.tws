@@ -5,7 +5,7 @@ S''
 p2
 sS'saveDestination'
 p3
-VC:\u005cUsers\u005cchats_000\u005cDocuments\u005cGitHub\u005cCMPM148\u005cTestTwine\u005ctest_twine.tws
+S'C:\\Users\\chats_000\\Documents\\GitHub\\CMPM148\\TestTwine\\test_twine.tws'
 p4
 sS'metadata'
 p5
@@ -27,8 +27,8 @@ I00
 sS'pos'
 p15
 (lp16
-I10
-aI10
+I9
+aI9
 asS'passage'
 p17
 (itiddlywiki
@@ -186,7 +186,7 @@ I00
 sg15
 (lp69
 F262.0
-aF10.0
+aF9.0
 asg17
 (itiddlywiki
 Tiddler
@@ -282,11 +282,11 @@ tp96
 Rp97
 sbsa(dp98
 g14
-I00
+I01
 sg15
 (lp99
 F514.0
-aF10.0
+aF9.0
 asg17
 (itiddlywiki
 Tiddler
