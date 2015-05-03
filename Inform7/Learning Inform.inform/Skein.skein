@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x02A8F150" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x02A8FDD0"/>
+  <item nodeId="node-0x02A8F150">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">Learning Inform&#x000A;An Interactive Fiction by Leif Myer&#x000A;Release 1 / Serial number 150503 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;bedroom&#x000A;Itesm litter the floor. It is very messy.&#x000A;&#x000A;You can see Pants here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02AA1A28"/>
+      <child nodeId="node-0x02A97A88"/>
+      <child nodeId="node-0x02A97AF8"/>
+      <child nodeId="node-0x02A97C48"/>
+      <child nodeId="node-0x02A97FC8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1A28">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">bedroom&#x000A;Itesm litter the floor. It is very messy.&#x000A;&#x000A;You can see Pants here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA1A98"/>
+      <child nodeId="node-0x02A8FAB0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1A98">
+    <command xml:space="preserve">talk</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA1B08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1B08">
+    <command xml:space="preserve">examine</command>
+    <result xml:space="preserve">What do you want to examine?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA1B78"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1B78">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">bedroom&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA1BE8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1BE8">
+    <command xml:space="preserve">go</command>
+    <result xml:space="preserve">You'll have to say which compass direction to go in.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02AA1C58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02AA1C58">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A8FAB0">
+    <command xml:space="preserve">take pants</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FB20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FB20">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">bedroom&#x000A;Itesm litter the floor. It is very messy.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FB90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FB90">
+    <command xml:space="preserve">drop pants</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FC00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FC00">
+    <command xml:space="preserve">examine pants</command>
+    <result xml:space="preserve">The pants are ugly as fuck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FCF0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FCF0">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">kitchen&#x000A;You can see a spoon and a stove here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FD60"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FD60">
+    <command xml:space="preserve">take stove</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A8FDD0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A8FDD0">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">kitchen&#x000A;You can see a spoon here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97A88">
+    <command xml:space="preserve">examine pants</command>
+    <result xml:space="preserve">The pants are ugly as fuck.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97AF8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">kitchen&#x000A;You can see a spoon and a stove here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97B68"/>
+      <child nodeId="node-0x02A97BD8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97B68">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">bedroom&#x000A;Itesm litter the floor. It is very messy.&#x000A;&#x000A;You can see Pants here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97BD8">
+    <command xml:space="preserve">examine stove</command>
+    <result xml:space="preserve">A beaten up chunk of metal. Not very exciting.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97C48">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">going to the wing&#x000A;East Wing&#x000A;Paints from 175908 to 3246389 decorate the walls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97CB8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97CB8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see a George Washington display, some Money and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97D28"/>
+      <child nodeId="node-0x02A97EE8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97D28">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">kitchen&#x000A;You can see a spoon and a stove here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97D98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97D98">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97E08"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97E08">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97E78"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97E78">
+    <command xml:space="preserve">leave</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97EE8">
+    <command xml:space="preserve">take candy bar</command>
+    <result xml:space="preserve">No one will miss this.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A97F58"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A97F58">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">going to the wing&#x000A;You walked through the doorway but are now in the same room again.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A97FC8">
+    <command xml:space="preserve">take money</command>
+    <result xml:space="preserve">Probably shouldn't take it because it's fake.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98038"/>
+      <child nodeId="node-0x02A982D8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98038">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see a George Washington display and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A980A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A980A8">
+    <command xml:space="preserve">drop money</command>
+    <result xml:space="preserve">Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98118"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98118">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see some Money, a George Washington display and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98188"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98188">
+    <command xml:space="preserve">tak candy bar</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A981F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A981F8">
+    <command xml:space="preserve">take candy bar</command>
+    <result xml:space="preserve">No one will miss this.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98268"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98268">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a Candy Bar&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02A982D8">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see a George Washington display, some Money and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98348"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98348">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East Wing&#x000A;Paints from 175908 to 3246389 decorate the walls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A983B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A983B8">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98428"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98428">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see a George Washington display, some Money and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98498"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98498">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">East Wing&#x000A;Paints from 175908 to 3246389 decorate the walls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98508"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98508">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">East Wing&#x000A;Paints from 175908 to 3246389 decorate the walls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98578"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98578">
+    <command xml:space="preserve">take candy bar</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A985E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A985E8">
+    <command xml:space="preserve">drop candy bar</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A98658"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A98658">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">East Wing&#x000A;Paints from 175908 to 3246389 decorate the walls.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02A986C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02A986C8">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Lobby&#x000A;Various displays are positioned in equal space from a centered exhibit.&#x000A;&#x000A;You can see a George Washington display, some Money and a Candy Bar here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>
