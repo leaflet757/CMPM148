@@ -4,10 +4,10 @@
   <activeNode nodeId="node-0x02BDF748"/>
   <item nodeId="node-0x02BDF748">
     <command xml:space="preserve">- start -</command>
-    <result xml:space="preserve">Carrot Simulator&#x000A;An Interactive Fiction by Leif Myer&#x000A;Release 1 / Serial number 150504 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Simulation Start&#x000A;Welcome to Carrot Simulator 2015, the only simulation where you can live out your dreams of being a carrot. There are plently of adventures to be had in the realm of carrot simulation. Up ahead you notice two doors. The door closer to the east side of the room has a sign that says "Turnip Door". The door closer to the west side of the room has a picture of a carrot on it.&#x000A;This is where you must put all your training to the test, which door do you choose?&#x000A;&#x000A;You can see a Carrot Door and a Turnip Door here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Carrot Simulator&#x000A;An Interactive Fiction by Leif Myer&#x000A;Release 1 / Serial number 150505 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;You cannot see anything because carrots don't have eyes. Try rolling to get a feel for the area.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">NO</temporary>
     <children>
       <child nodeId="node-0x02BDEA78"/>
@@ -223,7 +223,7 @@
     <result xml:space="preserve">Simulation Start&#x000A;Welcome to Carrot Simulator 2015, the only simulation where you can live out your dreams of being a carrot. There are plently of adventures to be had in the realm of carrot simulation. Up ahead you notice two doors. The door closer to the east side of the room has a sign that says "Turnip Door". The door closer to the west side of the room has a picture of a carrot on it.&#x000A;This is where you must put all your training to the test, which door do you choose?&#x000A;&#x000A;You can see a Carrot Door and a Turnip Door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x02BE81C8"/>
@@ -469,13 +469,14 @@
   </item>
   <item nodeId="node-0x02BED068">
     <command xml:space="preserve">open turnip</command>
-    <result xml:space="preserve">This is carrot simulator. Going through the Turnip Door would just be silly.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">This is Carrot Simulator. Going through the Turnip Door would just be silly.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x02BED0D8"/>
+      <child nodeId="node-0x0A479F28"/>
     </children>
   </item>
   <item nodeId="node-0x02BED0D8">
@@ -492,6 +493,113 @@
   <item nodeId="node-0x02BED148">
     <command xml:space="preserve">turnip door</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0A479F28">
+    <command xml:space="preserve">open carrot door</command>
+    <result xml:space="preserve">You open the Carrot Door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A479F98"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A479F98">
+    <command xml:space="preserve">go in carrot door</command>
+    <result xml:space="preserve">Underground&#x000A;After rolling through the door you find yourself underground. It is very hard to see and the dirt is making is hard to move.&#x000A;&#x000A;You can see a Carrot Door, Water and Roots (in which is Fiber) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A008"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A008">
+    <command xml:space="preserve">take water</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A078"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A078">
+    <command xml:space="preserve">put water in roots</command>
+    <result xml:space="preserve">Placing both the water and fiber in the roots has started a chain reaction. Through the magic of agriculture, the water has increased the power of fiber to 9000. Fiber this strong is very valuable to a carrot.&#x000A;You feel sunlight on you velvety skin. Perhaps you can find the strength within you to travel up.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A0E8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A0E8">
+    <command xml:space="preserve">take fiber</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A158"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A158">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">Surface&#x000A;You can feel the warmth of the sun. This is a lot better than being cramped underground.&#x000A;&#x000A;You can see Cotton Candy, Carrot Friends, Carrot-cature and Carrot Container (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A1C8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A1C8">
+    <command xml:space="preserve">put fiber in container</command>
+    <result xml:space="preserve">Carrot Container is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A238"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A238">
+    <command xml:space="preserve">ope ncontainer</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A2A8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A2A8">
+    <command xml:space="preserve">open container</command>
+    <result xml:space="preserve">You open Carrot Container.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A318"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A318">
+    <command xml:space="preserve">put fiber in container</command>
+    <result xml:space="preserve">*** gg. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -690,8 +798,6 @@
       <child nodeId="node-0x02BF0B90"/>
       <child nodeId="node-0x02BF0DC0"/>
       <child nodeId="node-0x02BF0E30"/>
-      <child nodeId="node-0x02BF38F0"/>
-      <child nodeId="node-0x02BF3960"/>
     </children>
   </item>
   <item nodeId="node-0x02BF0730">
@@ -757,13 +863,14 @@
   </item>
   <item nodeId="node-0x02BF09D0">
     <command xml:space="preserve">put water in roots</command>
-    <result xml:space="preserve">You put Water into Roots.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Placing both the water and fiber in the roots has started a chain reaction. Through the magic of agriculture, the water has increased the power of fiber to 9000. Fiber this strong is very valuable to a carrot.&#x000A;You feel sunlight on you velvety skin. Perhaps you can find the strength within you to travel up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <temporary score="0">YES</temporary>
     <children>
       <child nodeId="node-0x02BF0A40"/>
+      <child nodeId="node-0x0A47A4D8"/>
     </children>
   </item>
   <item nodeId="node-0x02BF0A40">
@@ -791,6 +898,58 @@
   <item nodeId="node-0x02BF0B20">
     <command xml:space="preserve">put water in roots</command>
     <result xml:space="preserve">You put Water into Roots.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x0A47A4D8">
+    <command xml:space="preserve">take fiber</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A548"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A548">
+    <command xml:space="preserve">up</command>
+    <result xml:space="preserve">Surface&#x000A;You can feel the warmth of the sun. This is a lot better than being cramped underground.&#x000A;&#x000A;You can see Cotton Candy, Carrot Friends, Carrot-cature and Carrot Container (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A5B8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A5B8">
+    <command xml:space="preserve">put fiber in container</command>
+    <result xml:space="preserve">Carrot Container is closed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A388"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A388">
+    <command xml:space="preserve">open container</command>
+    <result xml:space="preserve">You open Carrot Container.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x0A47A3F8"/>
+    </children>
+  </item>
+  <item nodeId="node-0x0A47A3F8">
+    <command xml:space="preserve">put fiber in container</command>
+    <result xml:space="preserve">*** YOU WIN:&#x000A;With the fiber secured in the Carrot Container, you turn with you head held high. You made you carrot nation proud today. You then mount your horse and ride off into the sunset. Well done. ***&#x000A;&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>NO</changed>
@@ -866,10 +1025,6 @@
     <children>
       <child nodeId="node-0x02BF0EA0"/>
       <child nodeId="node-0x02BF0F80"/>
-      <child nodeId="node-0x02BF11B0"/>
-      <child nodeId="node-0x02BF13E0"/>
-      <child nodeId="node-0x02BF3810"/>
-      <child nodeId="node-0x02BF3880"/>
     </children>
   </item>
   <item nodeId="node-0x02BF0EA0">
@@ -897,153 +1052,6 @@
     <commentary xml:space="preserve"></commentary>
     <played>YES</played>
     <changed>YES</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF0FF0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF0FF0">
-    <command xml:space="preserve">interact cotton candy</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1060"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1060">
-    <command xml:space="preserve">approach cotton candy</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF10D0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF10D0">
-    <command xml:space="preserve">touch cotton candy</command>
-    <result xml:space="preserve">You feel nothing unexpected.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1140"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1140">
-    <command xml:space="preserve">poke cotton candy</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF11B0">
-    <command xml:space="preserve">talk carrot freinds</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1220"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1220">
-    <command xml:space="preserve">talk</command>
-    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1290"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1290">
-    <command xml:space="preserve">speak</command>
-    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1300"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1300">
-    <command xml:space="preserve">ask carrot friends</command>
-    <result xml:space="preserve">What do you want to ask Carrot Friends for?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF1370"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF1370">
-    <command xml:space="preserve">take carrot friends</command>
-    <result xml:space="preserve">&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF13E0">
-    <command xml:space="preserve">open carrot container</command>
-    <result xml:space="preserve">You open Carrot Container.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-    <children>
-      <child nodeId="node-0x02BF14C0"/>
-    </children>
-  </item>
-  <item nodeId="node-0x02BF14C0">
-    <command xml:space="preserve">speak carrot friends</command>
-    <result xml:space="preserve">(to Carrot Friends)&#x000A;There is no reply.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF3810">
-    <command xml:space="preserve">speak carrot friends</command>
-    <result xml:space="preserve">(to Carrot Friends)&#x000A;There is no reply.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF3880">
-    <command xml:space="preserve">ask carrot friends</command>
-    <result xml:space="preserve">What do you want to ask Carrot Friends for?&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF38F0">
-    <command xml:space="preserve">go in roots</command>
-    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
-    <temporary score="0">YES</temporary>
-  </item>
-  <item nodeId="node-0x02BF3960">
-    <command xml:space="preserve">go into roots</command>
-    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
-    <commentary xml:space="preserve"></commentary>
-    <played>YES</played>
-    <changed>NO</changed>
     <temporary score="0">YES</temporary>
   </item>
 </Skein>

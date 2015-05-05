@@ -1,12 +1,5 @@
 "Carrot Simulator" by Leif Myer
 
-[
-to do list
-- friend interaction
-- container good end if fiber is not 0
-- remove things that no longer need to be seen
-]
-
 [Build Arguments]
 Release along with cover art, the source text, an interpreter, and a website.
 
@@ -42,19 +35,6 @@ Roots is in the Underground. Roots is a container that is open. The description 
 Fiber is in the Roots. The description of fiber is "Very important to carrots. The current strength of this fiber is [fiber strength] fiber units."
 Fiber Strength is number that varies. Fiber Strength is 0.
 
-[Container Check TODO: not working]
-Carry out putting:
-	say "test put";
-	if water is in Roots:
-		[TODO: unlcok the next area]
-		[TODO: Fiber becomes a grabbabe item]
-		[fiber does not appear in descripton of room]
-		say "dank memes";
-	If fiber is in roots and water is in roots:
-		say "Placing both the water and fiber in the roots has started a chain reaction. Through the magic of aggriculture, the water has increased the power of fiber to [fiber strength]. Fiber this strong is very valuable to a carrot.";
-		remove water from play;
-		now Fiber Strength is 9000.
-		
 
 [Surface Room]
 The Surface is a room. The Surface is above Underground. The description of the Surface is "You can feel the warmth of the sun. This is a lot better than being cramped underground."
@@ -83,25 +63,47 @@ Before taking Carrot-cature:
 	say "Somone worked hard on that. Taking it would be really mean, even for a carrot.";
 	stop the action.
 
-[TODO: finish speaking to carrots]
-Instead of asking or telling: [or talking or speaking]
-	say "this."
+[Speak Action]
+Speaking is an action applying to one thing.
+Understand "speak" as speaking.
+Understand "speak to [someone]" as speaking.
+
+[Rolling action] [TODO: rolling is the new look command]
+Rolling is an action applying to nothing.
+Understand "roll" as rolling.
+Carry out rolling:
+	say "inhale my dong child"
+
+[Carrot Friend Interaction]
+dancecount is a number that varies. dancecount is 0.
+Instead of speaking Carrot Friends:
+	if dancecount is 0:
+		now dancecount is 1;
+		say "You hear little carrot cheers and dances. It feels good to have friends cheer you on.";
+	else:
+		say "All your Carrot Friends are tired and don't want to dance again. It is probably best to let them rest."
+
+[Check if the player tries to interact other ways]
+Instead of asking Carrot Friends about something:
+	say "The Carrot Friends know nothing about the words which you speak. They are just carrots, give them some slack."
+Instead of telling Carrot Friends about something:
+	say "You finish your story to the Carrot Friends. They respond with nothing more than blank stares and a small cough."
 	
-
 [Looking check]
-Before looking:
-	if player is in Underground:
-		say "You cannot see anything because carrots don't have eyes.";
-		stop the action;
-	if player is in Surface:
-		say "Believe it or not, you are still a carrot and cannot look around. Try rolling to get a feel for the area.";
-		stop the action.
+Instead of looking:
+	say "You cannot see anything because carrots don't have eyes. Try rolling to get a feel for the area."
 
-[TODO: add you try to cry out for help but as a carrot you have no mouth and do not make a sound. no one will be coming to help]
-Understand the command "help" as something new.
-Understand "help" as "[helping]".
+[Help Action]
+Helping is an action applying to nothing.
+Understand "help" as helping.
+Carry out helping:
+	say "You try to cry out for help but as a carrot you have no mouth and do not make a sound. No one will be coming to help."
 		
-[End State Put Check]
-[Before putting:
-	say "you are doing the thing";
-	continue the action.]
+[Container Check]
+After inserting:
+	if water is in roots and fiber is in roots:
+		now Fiber Strength is 9000;
+		say "Placing both the water and fiber in the roots has started a chain reaction. Through the magic of agriculture, the water has increased the power of fiber to [fiber strength]. Fiber this strong is very valuable to a carrot.[line break]You feel sunlight on you velvety skin. Perhaps you can find the strength within you to travel up.";
+		remove water from play;
+	if fiber is in carrot container and fiber strength is 9000:
+		end the story saying "YOU WIN:[line break]With the fiber secured in the Carrot Container, you turn with you head held high. You made you carrot nation proud today. The little carrot children will tell stories of your bravery. Perhaps they will even make a cool movie from your adventure staring Dwayne 'The Carrot' Johnson. It's a nice thought but there are other matters to attend to. You perish these thoughts of muscular carrots and mount your horse to ride off into the sunset. Well done."
