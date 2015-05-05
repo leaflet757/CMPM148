@@ -6,6 +6,7 @@ status "B:\Programs_32\Inform 7\Internal\Miscellany\CblorbModel.html" "B:\Docume
 ! Identification
 
 project folder "B:\Documents\GitHub\CMPM148\Inform7\Carrot Simulator.inform"
+release to "B:\Documents\GitHub\CMPM148\Inform7\Carrot Simulator.materials\Release"
 
 ! Blorb instructions
 
