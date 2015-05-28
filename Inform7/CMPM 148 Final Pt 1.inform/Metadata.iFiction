@@ -2,11 +2,11 @@
 <ifindex version="1.0" xmlns="http://babel.ifarchive.org/protocol/iFiction/">
     <story>
         <identification>
-            <ifid>37E18174-3671-4991-899C-CEFAF4AC758A</ifid>
+            <ifid>EF78F06F-CA7D-4992-A9D6-A10A9518A7E3</ifid>
             <format>glulx</format>
         </identification>
         <bibliographic>
-            <title>Carrot Simulator</title>
+            <title>CMPM 148 Final Pt 1</title>
             <author>Leif Myer</author>
             <headline>An Interactive Fiction</headline>
             <genre>Fiction</genre>
@@ -14,16 +14,10 @@
             <language>en</language>
             <group>Inform</group>
         </bibliographic>
-        <cover>
-            <format>jpg</format>
-            <height>358</height>
-            <width>358</width>
-            <description>The cover art.</description>
-        </cover>
         <releases>
             <attached>
                 <release>
-                    <releasedate>2015-05-10</releasedate>
+                    <releasedate>2015-05-28</releasedate>
                     <version>1</version>
                     <compiler>Inform 7</compiler>
                     <compilerversion>6L38</compilerversion>
@@ -33,13 +27,12 @@
         <colophon>
             <generator>Inform 7</generator>
             <generatorversion>6L38</generatorversion>
-            <originated>2015-05-10</originated>
+            <originated>2015-05-28</originated>
         </colophon>
         <glulx>
-            <serial>150510</serial>
+            <serial>150528</serial>
             <release>1</release>
             <compiler>Inform 7 build 6L38</compiler>
-            <coverpicture>1</coverpicture>
         </glulx>
     </story>
 </ifindex>

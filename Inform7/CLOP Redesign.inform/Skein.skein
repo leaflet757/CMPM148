@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x02D68CB0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7 for Windows</generator>
+  <activeNode nodeId="node-0x02D90720"/>
+  <item nodeId="node-0x02D68CB0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">CLOP Redesign&#x000A;An Interactive Fiction by Leif Myer&#x000A;Release 1 / Serial number 150509 / Inform 7 build 6L38 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Starting Line&#x000A;"Ho there, CLOP! I hear tell there's a virgin on the far side of yon high and pleasant hill!" says the local japer Sherrod. &#x000A;&#x000A; You reply, "Confound thee Sherrod, this had best not be one of thine japes. Thou knowest I  mislike hills."&#x000A;&#x000A;You stand beneath an oak tree whose leaves are rustling in the wind. The grass underfoot tickles your hooves. Sherrod's quest rings true in your ears. You must begin your walk towards the virgin on yon high and pleasant hill. Use the verb "KHJL" to move.&#x000A;&#x000A;You can see Water here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">NO</temporary>
+    <children>
+      <child nodeId="node-0x02D90480"/>
+      <child nodeId="node-0x02D904F0"/>
+      <child nodeId="node-0x02D905D0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D90480">
+    <command xml:space="preserve">crave</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D90640"/>
+      <child nodeId="node-0x02D906B0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D90640">
+    <command xml:space="preserve">crave booty</command>
+    <result xml:space="preserve">I only understood you as far as wanting to crave.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D906B0">
+    <command xml:space="preserve">crave item</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D904F0">
+    <command xml:space="preserve">crave booty</command>
+    <result xml:space="preserve">you crave the booty.&#x000A;&#x000A;Pleasant Hill&#x000A;&#x000A;&#x000A;    *** You have reached yon high and pleasant hill! The virgin, however, was just one of Sherrod's japes after all. ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <children>
+      <child nodeId="node-0x02D90560"/>
+      <child nodeId="node-0x02D90720"/>
+    </children>
+  </item>
+  <item nodeId="node-0x02D90560">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Starting Line&#x000A;You stand beneath an oak tree whose leaves are rustling in the wind. The grass underfoot tickles your hooves. Sherrod's quest rings true in your ears. You must begin your walk towards the virgin on yon high and pleasant hill. Use the verb "KHJL" to move.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D90720">
+    <command xml:space="preserve">quit</command>
+    <result xml:space="preserve"></result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+  <item nodeId="node-0x02D905D0">
+    <command xml:space="preserve">crave water</command>
+    <result xml:space="preserve">you crave the booty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+  </item>
+</Skein>

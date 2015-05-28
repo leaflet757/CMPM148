@@ -1,0 +1,19 @@
+# Commands to WWIN
+open carrot door
+west
+take water
+put water in roots
+take fiber
+up
+open carrot container
+put fiber in carrot container
+
+# Commands to Lose
+open carrot door
+west
+take water
+put water in roots
+take fiber
+up
+take cotton candy
+take cotton candy
