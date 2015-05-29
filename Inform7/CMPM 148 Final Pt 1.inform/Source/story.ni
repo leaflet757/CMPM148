@@ -51,6 +51,16 @@ Before going to Daughter's Holding Cell:
 	else:
 		say "sorry captain";
 		stop the action.
+		
+[Escape Scene]
+Escape is a scene. Escape begins when the player is in Daughter's Holding Cell.
+When Escape begins:
+	say "Escape Begins".
+When Escape ends:
+	say "Escape Ends".
+Every turn during the Escape:
+	say "Escaping...".
+Escape ends when the player is in Exit.
 
 [-----Stock Holding Room-----]
 Stock Holding Area is a room. The Stock Holding Area is south of the Long Hallway.
@@ -58,8 +68,14 @@ Stock Holding Area is a room. The Stock Holding Area is south of the Long Hallwa
 [Stick of Dynamite]
 A Stick of Dynamite is switched off device in the Stock Holding Area.
 Before switching on Dynamite:
-	[TODO: write conditional statement]
-	say "you need matches in inventory and player be near exit door and daugher with you".
+	if Escape is happening and player is in Shipping Area and player has Matches:
+		say "placing dynamite by locked door";
+		now Dynamite is in Shipping Area;
+		remove Matches from play;
+		continue the action;
+	else:
+		say "you need matches in inventory and player be near exit door and daugher with you";
+		stop the action.
 
 [-----Assembly Room-----]
 Assembly is a room. The Assembly is south of the Stock Holding Area.
@@ -117,9 +133,10 @@ Exit is a room.
 The Exit Door is a lockable door that is unlocked. The Exit Door is east of the Shipping Area and west of the Exit.
 
 [Check if player can leave with car and Kam]
-Before going in the Long Hallway: [TODO NOT SAYING WHEN PLAYER GOES IN ROOM]
-	say "test";
-	continue the action.
+Before going through the Exit Door:
+	if player is in the jeep:
+		[TODO: move player outside the jeep;]
+		continue the action.
 
 
 [Check if Kam should follow you]
