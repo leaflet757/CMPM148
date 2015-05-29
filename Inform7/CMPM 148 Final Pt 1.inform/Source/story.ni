@@ -138,8 +138,17 @@ Before going through the Exit Door:
 		[TODO: move player outside the jeep;]
 		continue the action.
 
-
 [Check if Kam should follow you]
 After going when with_daughter is 1:
 	now Kam is in location of the player;
 	continue the action.
+	
+	
+	
+[NOTES]
+A door can be magical or boring. A door is usually boring.
+
+A person can be hidden or not hidden. A person is usually not hidden.
+The player is a person.
+
+[Dialog extensions]
