@@ -1,5 +1,14 @@
 "CMPM 148 Final Pt 1" by Leif Myer
 
+[Build Arguments]
+[Release along with cover art, the source text, an interpreter, and a website.]
+
+
+[***Variables and Stuff***]
+camera_timer is a number that varies. camera_timer is 0.
+with_daughter is a number that varies. with_daughter is 0.
+
+
 [-----Holding Cell Room-----]
 The Holding Cell is a room.
 
@@ -19,19 +28,46 @@ Locker Rooms is a room. The Locker Rooms are east of the Unlit Area.
 Archive Room is a room. The Archive Room is south of the Locker Rooms.
 
 [-----Office Room-----]
-Office is a room. The Office is west of the Archive Room.
+Office is a room.
+The Office Door 1 is east of the Office and west of the Archive Room. The Office Door 1 is a door. The Office Door 1 is lockable and locked.
+The Office Door 2 is west of the Office and east of the Warehouse Floor. The Office Door 2 is a door. The Office Door 2 is lockable and locked.
+The small Silver Key unlocks the Office Door 1.
+The small Silver Key unlocks the Office Door 2.
 
 [-----Daughter's Holding Cell-----]
 Daughter's Holding Cell is a room. The Daughter's Holding Cell is north of the Office.
 
+[Daughter Person]
+Kam is a person in Daughter's Holding Cell.
+
+After going in the Daughter's Holding Cell:
+	now with_daughter is 1;
+	continue the action.
+
+[Check if the Player can Enter]
+Before going to Daughter's Holding Cell:
+	if Camera Off is happening:
+		say "etnering the room";
+	else:
+		say "sorry captain";
+		stop the action.
+
 [-----Stock Holding Room-----]
 Stock Holding Area is a room. The Stock Holding Area is south of the Long Hallway.
+
+[Stick of Dynamite]
+A Stick of Dynamite is switched off device in the Stock Holding Area.
+Before switching on Dynamite:
+	[TODO: write conditional statement]
+	say "you need matches in inventory and player be near exit door and daugher with you".
 
 [-----Assembly Room-----]
 Assembly is a room. The Assembly is south of the Stock Holding Area.
 
 [-----Warehouse Floor Room-----]
-Warehouse Floor is a room. The Warehouse Floor is east of the Stock Holding Area and south of the Wide Hallway and west of the Office.
+Warehouse Floor is a room. The Warehouse Floor is east of the Stock Holding Area and south of the Wide Hallway.
+[Silver Key]
+The small Silver Key is in the Warehouse Floor.
 
 [-----Packaging (Shipping) Room-----]
 Packaging Area is a room. The Packaging Area is south of Assembly.
@@ -39,14 +75,54 @@ Packaging Area is a room. The Packaging Area is south of Assembly.
 [-----Security (Camera) Room-----]
 Security is a room. Security is north of the Restroom and east of Assembly and west of the Sleeping Quarters and south of the Warehouse Floor.
 
+[Camera Scene]
+Camera Off is a recurring scene. Camera Off begins when camera_timer is 10.
+When Camera Off begins:
+	say "camera off begins".
+When Camera Off ends:
+	say "acmer off stops";
+	now Camera Controls are switched on.
+Every turn during the Camera Off:
+	decrease camera_timer by 1.
+Camera Off ends when camera_timer is 0.
+
+[Camera Switching]
+The Camera Controls is a switched on device in Security. It is fixed in place.
+Carry out switching off the Camera Controls:
+	now camera_timer is 10;
+	say "The camera timer is now [camera_timer]".
+Carry out switching on the Camera Controls:
+	now camera_timer is 0;
+	say "The camera timer is now [camera_timer]".
+
 [-----Restroom-----]
 Restroom is a room. The Restroom is east of the Packaging Area.
 
+[Matches]
+Matches are in the Restroom.
+
 [-----Shipping (Vehicle) Room-----]
 Shipping Area is a room. The Shipping Area is east of the Restroom.
+
+[Car Thing]
+The Jeep is an enterable container in the Shipping Area.
 
 [-----Sleeping Quarters-----]
 Sleeping Quarters is a room. The Sleeping Quarters is north of the Shipping Area and south of the Archive Room.
 
 [-----Exit Room-----]
-Exit is a room. Exit is east of the Shipping Area.
+Exit is a room.
+
+[Exit Door]
+The Exit Door is a lockable door that is unlocked. The Exit Door is east of the Shipping Area and west of the Exit.
+
+[Check if player can leave with car and Kam]
+Before going in the Long Hallway: [TODO NOT SAYING WHEN PLAYER GOES IN ROOM]
+	say "test";
+	continue the action.
+
+
+[Check if Kam should follow you]
+After going when with_daughter is 1:
+	now Kam is in location of the player;
+	continue the action.
