@@ -147,8 +147,7 @@ After going when with_daughter is 1:
 	
 [NOTES]
 A door can be magical or boring. A door is usually boring.
-
+[Properties]
 A person can be hidden or not hidden. A person is usually not hidden.
 The player is a person.
-
 [Dialog extensions]
