@@ -136,14 +136,18 @@ The Exit Door is a lockable door that is unlocked. The Exit Door is east of the 
 Before going through the Exit Door:
 	if player is in the jeep:
 		[TODO: move player outside the jeep;]
-		continue the action.
+		continue the action;
+	else:
+		say "you should get in the jeep".
 
 [Check if Kam should follow you]
 After going when with_daughter is 1:
 	now Kam is in location of the player;
 	continue the action.
 	
-	
+[Dead People Room]
+The Dead Room is a room.
+
 	
 [NOTES]
 A door can be magical or boring. A door is usually boring.
