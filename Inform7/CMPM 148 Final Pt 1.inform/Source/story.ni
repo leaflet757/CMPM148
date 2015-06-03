@@ -3,10 +3,19 @@
 [Build Arguments]
 [Release along with cover art, the source text, an interpreter, and a website.]
 
+[Includes]
+Include Rideable Vehicles by Graham Nelson. 
 
 [***Variables and Stuff***]
 camera_timer is a number that varies. camera_timer is 0.
 with_daughter is a number that varies. with_daughter is 0.
+rand is a number that varies. rand is 3.
+
+[TODO: hidable objects]
+
+When play begins: [TODO: random encounter]
+	now rand is a random number between 1 and 3;
+	say "now random is [rand]".
 
 
 [-----Holding Cell Room-----]
@@ -67,7 +76,7 @@ Stock Holding Area is a room. The Stock Holding Area is south of the Long Hallwa
 
 [Stick of Dynamite]
 A Stick of Dynamite is switched off device in the Stock Holding Area.
-Before switching on Dynamite:
+[Before switching on Dynamite: [-------------------------------------------------------------------------------------------------------------]
 	if Escape is happening and player is in Shipping Area and player has Matches:
 		say "placing dynamite by locked door";
 		now Dynamite is in Shipping Area;
@@ -75,7 +84,7 @@ Before switching on Dynamite:
 		continue the action;
 	else:
 		say "you need matches in inventory and player be near exit door and daugher with you";
-		stop the action.
+		stop the action.]
 
 [-----Assembly Room-----]
 Assembly is a room. The Assembly is south of the Stock Holding Area.
@@ -121,7 +130,10 @@ Matches are in the Restroom.
 Shipping Area is a room. The Shipping Area is east of the Restroom.
 
 [Car Thing]
-The Jeep is an enterable container in the Shipping Area.
+The Jeep is a vehicle in the Shipping Area.
+Before taking the jeep:
+	say "it b too eavy.";
+	stop the action.
 
 [-----Sleeping Quarters-----]
 Sleeping Quarters is a room. The Sleeping Quarters is north of the Shipping Area and south of the Archive Room.
@@ -130,12 +142,12 @@ Sleeping Quarters is a room. The Sleeping Quarters is north of the Shipping Area
 Exit is a room.
 
 [Exit Door]
-The Exit Door is a lockable door that is unlocked. The Exit Door is east of the Shipping Area and west of the Exit.
+The Exit Door is a lockable door that is locked. The Exit Door is east of the Shipping Area and west of the Exit.
 
 [Check if player can leave with car and Kam]
 Before going through the Exit Door:
 	if player is in the jeep:
-		[TODO: move player outside the jeep;]
+		[remove the jeep from play;]
 		continue the action;
 	else:
 		say "you should get in the jeep".
@@ -145,10 +157,36 @@ After going when with_daughter is 1:
 	now Kam is in location of the player;
 	continue the action.
 	
+[TODO: random encounters]
+[After going:
+	if a random chance of 1 and 3 succeeds:
+		say "the random chance succeeds.".]
+	
 [Dead People Room]
 The Dead Room is a room.
 
-	
+
+[Use matches action]
+Igniting is an action applying to two things.
+Understand "light [something]" as Igniting.
+Understand "light [something] with [something]" as Igniting.
+Check Igniting:
+	if the matches are not carried:
+		say "You don't have anything to light [the noun] with.";
+	else if the stick of dynamite is not carried:
+		say "That is probably not something you should use matches on";
+	else if escape is not happening:
+		say "It would best not to make a lot of noise right now. You still need to find Kam.";
+	else if the player is not in the Shipping Area:
+		say "You should probably use that near the exit.".
+Carry out Igniting:
+	if player is in the Shipping Area and the stick of dynamite is carried and the matches are carried:
+		say "placing dynamite by locked door, it then instantly explodes";
+		now Dynamite is in Shipping Area;
+		now the Exit Door is unlocked;
+		remove Matches from play.
+
+
 [NOTES]
 A door can be magical or boring. A door is usually boring.
 [Properties]
