@@ -9,34 +9,31 @@ Include Rideable Vehicles by Graham Nelson.
 [***Variables and Stuff***]
 camera_timer is a number that varies. camera_timer is 0.
 with_daughter is a number that varies. with_daughter is 0.
-rand is a number that varies. rand is 3.
+must_hide is a number that varies. must_hide is 0.
 
-[Init]
-When play begins:
-	now rand is a random number between 1 and 4.
 	
 [Hidable Objects]
 A Hidable Object is a kind of enterable container.
 A hidable object is usually fixed in place.
 
 [-----Holding Cell Room-----]
-The Holding Cell is a room.
+The Holding Cell is a room. The description of Holding Cell is "The room is icy cold and barely lit.  Utilizing the little light you have, you deduce that the room has very few notable features. The room could really use some posters.".
 
 [-----Long Hallway Room-----]
-Long Hallway is a room. The Long Hallway is east of The Holding Cell.
-A Porcelain Canoe is a hidable object in the Long Hallway.
+Long Hallway is a room. The Long Hallway is east of The Holding Cell. The description of Long Hallway is "This room has far fewer spacial constraints compared to the room you were held in. You see that the hallway is very long and connected to several other rooms. ".
+A Porcelain Canoe is a hidable object in the Long Hallway. The description of Porcelain Canoe is "Your mind strains to find the purpose of this item. It's certainly big enough to uncomfortably house a person but the material the canoe is made out of is definately questionable.".
 
 [-----Wide Hallway Room-----]
-Wide Hallway is a room. The Wide Hallway is east of the Long Hallway.
-A Giant Inflatable Menorah is a hidable object in the Wide Hallway.
+Wide Hallway is a room. The Wide Hallway is east of the Long Hallway. The description of Wide Hallway is "temp wide hallway"
+A Giant Inflatable Menorah is a hidable object in the Wide Hallway. The description of Giant Menorah is "A giant inflatable religious artifact that is tucked away in the corner. You begin to wonder that the goons here are just misunderstood. Perhaps they do not want to steel young daughters and would prefer to steel Christmas instead.".
 
 [-----Unlit Area (Dark Room) Room-----]
-Unlit Area is a room. The Unlit Area is east of the Wide Hallway.
-A Dog House is a hidable object in the Unlit Area.
+Unlit Area is a room. The Unlit Area is east of the Wide Hallway. The description of Unlit Area is "temp This place seems to be out of reach of any light source. "
+A Dog House is a hidable object in the Unlit Area. The description of Dog House is "temp: I wonder where the dog is...".
 
 [-----Locker Room-----]
-Locker Rooms is a room. The Locker Rooms are east of the Unlit Area. 
-The Shower is a hidable object in the Locker Rooms.
+Locker Rooms is a room. The Locker Rooms are east of the Unlit Area. The description of Locker Rooms is "temp: This place looks like the locker rooms you had at your old high school.".
+The Shower is a hidable object in the Locker Rooms. The description of Shower is "No locker room would be complete without one. The shower is surrounded by a silky smooth blue tarp. ".
 
 [-----Archive Room-----]
 Archive Room is a room. The Archive Room is south of the Locker Rooms.
@@ -112,7 +109,7 @@ Security is a room. Security is north of the Restroom and east of Assembly and w
 A Giant Super Computer is in the Security Room. Giant Super Computer is a hidable object.
 
 [Camera Scene]
-Camera Off is a recurring scene. Camera Off begins when camera_timer is 10.
+Camera Off is a recurring scene. Camera Off begins when camera_timer is 6.
 When Camera Off begins:
 	say "camera off begins".
 When Camera Off ends:
@@ -122,7 +119,28 @@ Every turn during the Camera Off:
 	decrease camera_timer by 1.
 Camera Off ends when camera_timer is 0.
 
-[TODO: Needing to Hide Scene]
+[Needing to Hide Scene]
+hs_count is a number that varies. hs_count is 0.
+hide_time is a number that varies. hide_time is 0.
+Needing to Hide is a recurring scene. Needing to Hide begins when must_hide is 1.
+When Needing to Hide begins:
+	now hs_count is 0;
+	now hide_time is a random number between 2 and 3;
+	say "a person enters the room, you need to find somethign to hide behind fast.".
+When Needing to Hide ends:
+	say "the person has left the room, it's safe to leave your hiding spot.".
+Every turn during Needing to Hide:
+	if hs_count is 1:
+		if the player is hidden:
+			say "you wait for the man to leave";
+		if the player is not hidden:
+			say "you lose";
+	if hide_time is 0:
+		say "the man leaves";
+		now must_hide is 0;
+	increase hs_count by 1;
+	decrease hide_time by 1.
+Needing to Hide Ends when must_hide is 0.
 
 [Camera Switching]
 The Camera Controls is a switched on device in Security. It is fixed in place.
@@ -150,6 +168,12 @@ The Jeep is a vehicle in the Shipping Area.
 Before taking the jeep:
 	say "it b too eavy.";
 	stop the action.
+Before entering the Jeep:
+	if Escape is not happening:
+		say "TODO: cant get in that now, kam has the keys";
+		stop the action;
+	else:
+		continue the action.
 
 [-----Sleeping Quarters-----]
 Sleeping Quarters is a room. The Sleeping Quarters is north of the Shipping Area and south of the Archive Room.
@@ -177,10 +201,23 @@ After going when with_daughter is 1:
 	now Kam is in location of the player;
 	continue the action.
 	
-[TODO: random encounters, not in enterance and holding cell]
-[After going:
-	if a random chance of 1 and 3 succeeds:
-		say "the random chance succeeds.".]
+[Every turn when a random chance of 1 in 4 succeeds:]
+[Before going east:
+	if a random chance of 1 in 4 succeeds and player is not in Jeep:
+		now must_hide is 1;
+	continue the action.
+Before going north:
+	if a random chance of 1 in 4 succeeds and player is not in Jeep:
+		now must_hide is 1;
+	continue the action.
+Before going south:
+	if a random chance of 1 in 4 succeeds and player is not in Jeep:
+		now must_hide is 1;
+	continue the action.
+Before going west:
+	if a random chance of 1 in 4 succeeds and player is not in Jeep and the player is not in the long hallway:
+		now must_hide is 1;
+	continue the action.]
 
 [Hide action]
 Hiding is an action applying to one thing.
@@ -194,13 +231,18 @@ Check hiding:
 		say "You cannot hide in the [the noun]".
 Carry out hiding:
 	if the object is a hidable object:
+		say "debig: you are going in the thign";
+		[TODO: if escape happening say something about kam being with you]
+		now the player is hidden;
 		try entering the noun.
 		
 [Check if the Player is Hidden]
 Every Turn:
 	if the player is in a hidable object:
-		now the player is hidden;
+		say "debig: the player is hidden";
+		[now the player is hidden;]
 	else if the player is not in a hidable object:
+		say "debig: the player is not hidden";
 		now the player is not hidden.
 
 [Use matches action]
