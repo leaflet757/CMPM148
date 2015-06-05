@@ -9,7 +9,7 @@ project folder "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform"
 
 ! Blorb instructions
 
-storyfile leafname "CMPM 148 Final Pt 1.gblorb"
+storyfile leafname "Nekat.gblorb"
 storyfile "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\output.ulx" include
 ifiction "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Metadata.iFiction" include
 cover "B:\Programs_32\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -20,8 +20,8 @@ picture 1 "B:\Programs_32\Inform 7\Internal\Miscellany\Cover.jpg"
 placeholder [IFID] = "EF78F06F-CA7D-4992-A9D6-A10A9518A7E3"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2015"
-placeholder [TITLE] = "CMPM 148 Final Pt 1"
-placeholder [AUTHOR] = "Leif Myer"
+placeholder [TITLE] = "Nekat"
+placeholder [AUTHOR] = "Aaron Marquis and Leif Myer"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
