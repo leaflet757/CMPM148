@@ -1,0 +1,48 @@
+# Commands to beat the game
+#
+# Note: Due to the randomness in the game,
+# some walkthroughs may be longer than others
+# and some commands may or may not appear
+
+STARTING FROM HOLDING CELL
+
+Note: when a thug enters the room use the command:
+hide in '?'
+Where '?' is the object of interest.
+
+1. west
+2. south
+3. Optional: Hide in stocks
+4. Optional: wait
+5. take dynamite
+6. south
+7. east
+8. turn off camera
+9. north
+10. take key
+11. unlock door
+12. east
+13. north
+14. south
+15. west
+16. south
+17. south
+18. take matches
+19. east
+20. light dynamite with matches
+21. east
+
+
+STARTING FROM TV ROOM
+
+1. west
+2. wait.
+3. west
+4. north
+5. north
+6. kill Thug2
+7. south
+8. south
+9. west
+10. look
+10. kill Thug1

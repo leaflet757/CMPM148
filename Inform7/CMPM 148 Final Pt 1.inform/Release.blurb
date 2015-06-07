@@ -1,19 +1,19 @@
 ! Blurb file created by Inform build 6L38
 
-status "B:\Programs_32\Inform 7\Internal\Miscellany\CblorbModel.html" "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\StatusCblorb.html"
+status "C:\Program Files (x86)\Inform 7\Internal\Miscellany\CblorbModel.html" "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\StatusCblorb.html"
 
 
 ! Identification
 
-project folder "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform"
+project folder "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform"
 
 ! Blorb instructions
 
 storyfile leafname "Nekat.gblorb"
-storyfile "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\output.ulx" include
-ifiction "B:\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Metadata.iFiction" include
-cover "B:\Programs_32\Inform 7\Internal\Miscellany\Cover.jpg"
-picture 1 "B:\Programs_32\Inform 7\Internal\Miscellany\Cover.jpg"
+storyfile "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\output.ulx" include
+ifiction "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Metadata.iFiction" include
+cover "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.materials\Cover.jpg"
+picture 1 "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.materials\Cover.jpg"
 
 ! Placeholder variables
 
@@ -26,11 +26,27 @@ placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
 
-status alternative ||Using 'Release along with cover art', to provide something more distinctive than the default artwork above&nbsp;<a href=inform:/doc402.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with a website'&nbsp;<a href=inform:/doc404.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with an interpreter', for in-browser play on your website&nbsp;<a href=inform:/doc405.html><img border=0 src=inform:/doc_images/help.png></a>||
+source public
+
+! Website instructions
+
+placeholder [ENCODEDSTORYFILE] = "Nekat.gblorb.js"
+template path "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.materials\Templates"
+template path "C:\Users\chats_000\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+placeholder [INTERPRETERSCRIPTS] = " "
+interpreter "Quixe" "g"
+base64 "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.inform\Build\output.ulx" to "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.materials\Release\interpreter\Nekat.gblorb.js"
+
+! Website instructions
+
+template path "C:\Users\chats_000\Documents\GitHub\CMPM148\Inform7\CMPM 148 Final Pt 1.materials\Templates"
+template path "C:\Users\chats_000\Documents\Inform\Templates"
+template path "C:\Program Files (x86)\Inform 7\Internal\Templates"
+css
+website "Standard"
+status instruction ||&nbsp;<a href="source:story.ni#line4"><img border=0 src=inform:/doc_images/Reveal.png></a>||
 status alternative ||Using 'Release along with a file of "Such-and-Such" called "whatever.pdf"', perhaps to add a manual, or a welcoming note&nbsp;<a href=inform:/doc400.html><img border=0 src=inform:/doc_images/help.png></a>||
-status alternative ||Using 'Release along with the source text'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with a solution'&nbsp;<a href=inform:/doc410.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the library card'&nbsp;<a href=inform:/doc411.html><img border=0 src=inform:/doc_images/help.png></a>||
 status alternative ||Using 'Release along with the introductory booklet'&nbsp;<a href=inform:/doc403.html><img border=0 src=inform:/doc_images/help.png></a>||

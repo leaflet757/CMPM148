@@ -11,13 +11,6 @@ camera_timer is a number that varies. camera_timer is 0.
 with_daughter is a number that varies. with_daughter is 0.
 must_hide is a number that varies. must_hide is 0.
 
-[Story Description]
-The story description is "The player’s takes the role of Brian who is an ex-CIA agent. The player must utilize Brian’s abilities to defend himself from the mafia and save his daughter Kam."
-
-[Stroy Intro]
-When play begins:
-	say "Brian Bills, former CIA agent, has enjoyed his time off for the last 10 years. For the most part, He has lived a normal life aside from the occasional sale at JC Penny’s. One day, he decides to take his beautiful daughter, Kam, on a trip to Europe during her Spring Break. After one of his morning pilates classes, he comes back to his hotel room ran-sacked and in complete disarray, and Kam is no where to be seen. Suddenly, Brian’s phone begins to ring. Brian picks up the phone and hears a distorted voice on the other side. The caller informs Brian that his daughter has been kidnapped to reconcile his past actions while in the CIA. Furious, Brian sets out to search for his daughter’s kidnappers. During his investigation, Brian discovers that the kidnappers are apart of the same mafia gang he helped eradicate many years ago. But this knowledge came with a price. It turned out that his informant is actually a mafia member as well, causing Brian to get captured as well.[line break]".
-[================================================================================]	
 	
 [Hidable Objects]
 A Hidable Object is a kind of enterable container.
@@ -31,8 +24,8 @@ Long Hallway is a room. The Long Hallway is east of The Holding Cell. The descri
 A Porcelain Canoe is a hidable object in the Long Hallway. The description of Porcelain Canoe is "Your mind strains to find the purpose of this item. It's certainly big enough to uncomfortably house a person but the material the canoe is made out of is definately questionable.".
 
 [-----Wide Hallway Room-----]
-Wide Hallway is a room. The Wide Hallway is east of the Long Hallway. The description of Wide Hallway is "Another hallway with the properties of the most boring interior decorator you have ever seen. You notice several enterances and exits leading out of the room.".
-A Giant Inflatable Menorah is a hidable object in the Wide Hallway. The description of Giant Menorah is "A giant inflatable religious artifact that is tucked away in the corner. You begin to wonder that the goons here are just misunderstood. Perhaps they do not want to steal young daughters and would prefer to steal Christmas instead.".
+Wide Hallway is a room. The Wide Hallway is east of the Long Hallway. [The description of Wide Hallway is "temp wide hallway"]
+A Giant Inflatable Menorah is a hidable object in the Wide Hallway. The description of Giant Menorah is "A giant inflatable religious artifact that is tucked away in the corner. You begin to wonder that the goons here are just misunderstood. Perhaps they do not want to steel young daughters and would prefer to steel Christmas instead.".
 
 [-----Unlit Area (Dark Room) Room-----]
 Unlit Area is a room. The Unlit Area is east of the Wide Hallway. The description of Unlit Area is "This place seems to be out of reach of any light source. Just what this place needed, more dark rooms. ".
@@ -76,8 +69,8 @@ Before going to Daughter's Holding Cell:
 Escape is a scene. Escape begins when the player is in Daughter's Holding Cell.
 When Escape begins:
 	say "With Kam by your side, it's time to make your great escape. You need to travel fast before people notice she is missing.".
-[When Escape ends:
-	say "TODO: should this be where we say you have been successfull?".]
+When Escape ends:
+	say "TODO: should this be where we say you have been successfull?".
 [Every turn during the Escape:
 	say "Escaping...".]
 Escape ends when the player is in Exit.
@@ -87,7 +80,7 @@ Stock Holding Area is a room. The Stock Holding Area is south of the Long Hallwa
 Pile of Stocks are a hidable object in the Stock Holding Area. The description of Pile of Stocks is "A large pile of papers you can dive right into.".
 
 [Stick of Dynamite]
-A Stick of Dynamite is switched off device in the Stock Holding Area. The description of Stick of Dynamite is "A stick of dynamite you found in the stock room. I guess if the stock market were to crash, you wouldn't mind having a stick of dynamite with you. You should probably avoid using this on anything until you find Kam.".
+A Stick of Dynamite is switched off device in the Stock Holding Area. The description of Stick of Dynamite is "A stick of dynamite you found in the stock room. I guess if the stock market were to crash, you wouldn't mind having a stick of dynamite with you.".
 Before switching on Dynamite:
 	if Escape is happening and player is in Shipping Area and player has Matches:
 		say "You use the last match on the stick of dynamite. That fuse is burning a lot faster than you thought it would. You throw the dynamite right in front of the Iron Door.";
@@ -142,7 +135,7 @@ Every turn during Needing to Hide:
 		if the player is hidden:
 			say "Lying in wait, like the robotic cheeta, you wait for the thug to leave...";
 		if the player is not hidden:
-			end the story saying "Oh no! You have been spotted! Just when you turn to run away, a group of thugs seem to come from all directions. Brian is now captured again with even less hope of escaping.";
+			say "TODO: you lose";
 	if hide_time is 0:
 		[say "the man leaves";]
 		now must_hide is 0;
@@ -190,19 +183,20 @@ Beds are in the Sleeping Quarters. Beds are a Hidable Object. The description of
 [-----Exit Room-----]
 Exit is a room.
 
-[Switch to PT2 of Game]
 Switching is a scene. Switching begins when the player is in Exit.
 When switching begins:
 	[say "switching begins";]
 	now the player is in the TV Room.
-When switching ends:
-	say "With the door in ruins and Kam with Brian, you cannot think of any substaintial reason for them to stay there. With blazing speed, they sprint out of the complex with the Mafia right on their tails. Luckily for them, the complex they were being held captive in was only a few meters away from an airport. Using Brian's official CIA credentials, they are able to find a plane ride home, It seems like everything is over...
-	
-	Unfortunately, not everything is over. Two months later, Brian spots three mysterious cars follow him back home after picking up his daughter from school. Once he gets back home with his daughter, they quickly go inside the house and lock the doors. Brian must make his last stand against the mafia in his own home. He loads up his gun and prepares for the final battle...".
+[When switching ends:
+	say "switching stops".]
 Switching ends when the player is in the Living Room.
+
 
 [Iron Door]
 The Iron Door is a lockable door that is locked. The Iron Door is east of the Shipping Area and west of the Exit. The description of Iron Door is "A solid iron door that doesn't even have a handle. It might has well been a wall.".
+
+[-----Dead People Room-----]
+The Dead Room is a room.
 
 [Check if player can leave with car and Kam]
 [TODO: must leave the jeep after going through the door, then remove from play]
@@ -220,19 +214,19 @@ After going when with_daughter is 1:
 	
 [Every turn when a random chance of 1 in 10 succeeds:]
 Before going east:
-	if a random chance of 1 in 8 succeeds and player is not in Jeep:
+	if a random chance of 1 in 10 succeeds and player is not in Jeep:
 		now must_hide is 1;
 	continue the action.
 Before going north:
-	if a random chance of 1 in 8 succeeds and player is not in Jeep and the player is not in the Office:
+	if a random chance of 1 in 10 succeeds and player is not in Jeep and the player is not in the Office:
 		now must_hide is 1;
 	continue the action.
 Before going south:
-	if a random chance of 1 in 8 succeeds and player is not in Jeep:
+	if a random chance of 1 in 10 succeeds and player is not in Jeep:
 		now must_hide is 1;
 	continue the action.
 Before going west:
-	if a random chance of 1 in 8 succeeds and player is not in Jeep and the player is not in the long hallway:
+	if a random chance of 1 in 10 succeeds and player is not in Jeep and the player is not in the long hallway:
 		now must_hide is 1;
 	continue the action.
 
@@ -249,8 +243,7 @@ Check hiding:
 Carry out hiding:
 	if the object is a hidable object:
 		[say "debig: you are going in the thign";]
-		if Escape is happening:
-			say "You quickly shove Kam in the [the noun] to keep her from being seen.";
+		[TODO: if escape happening say something about kam being with you]
 		now the player is hidden;
 		try entering the noun.
 		
